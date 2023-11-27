@@ -1,0 +1,50 @@
+.custom-card-size {
+    max-width: 490px;
+    min-height: 270px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-content {
+    --ion-background-color: var(--ion-color-blue-pepper);
+}
+ion-content.ion-color-dark {
+    --ion-background-color: var(--ion-color-dark);
+}
+ion-button {
+    &.ion-color-custom {
+    --ion-color-base: var(--ion-color-butt);
+    }
+}
+ion-button.ion-color-dark {
+    &.ion-color-custom {
+        --ion-color-base: var(--ion-color-butt);
+    }
+}
+.barra {
+    --ion-background-color: var(--ion-color-barra);
+    --ion-color-contrast: #ffffff; 
+}
+ion-toolbar.ion-color-dark.barra {
+    --ion-background-color: var(--ion-color-barra);
+    --ion-color-contrast: #ffffff;
+}
+.cardsa {
+    --ion-background-color: var(--ion-color-frente);
+    --ion-color-contrast: #ffffff;
+}
+ion-card.ion-color-dark.cards {
+    --ion-background-color: var(--ion-color-frente);
+    --ion-color-contrast: #ffffff;
+}
+.cardsb {
+    --ion-background-color: var(--ion-color-fondo);
+    --ion-color-contrast: #ffffff;
+}
+.ion-color-dark.cardsb {
+    --ion-background-color: var(--ion-color-fondo);
+    --ion-color-contrast: #ffffff;
+}

@@ -1,0 +1,16 @@
+ion-content {
+    --ion-background-color: url(/assets/pepper/pepper1.gif);
+    --color: white;
+}
+
+ion-header {
+    background: url(/assets/pepper/pepper1.gif);
+}
+img{
+    padding-top: 40vh;
+    width: 100%;
+    max-width: 500px;
+}
+
+.scale-up-center{animation:scale-up-center 1.0s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+.blur-in{animation:blur-in 0.8s linear both} @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

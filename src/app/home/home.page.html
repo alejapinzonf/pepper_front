@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-text-center">
+    <img src="assets/pepper/pepper_main.png">  
+  </div>
+  <ion-row>
+    <ion-col width-30  style="text-align: right">
+      <ion-button color="custom" shape="round" size="large" fill="outline">
+        <ion-icon slot="icon-only" name="moon-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col width-30 style="text-align: center">
+      <ion-button color="custom" shape="round" fill="outline" size="large">
+        <ion-icon slot="icon-only" name="sunny-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col width-30 style="text-align: left">
+      <ion-button color="custom" id="open-modal" shape="round" size="large" fill="outline" (click)="setOpen(true)">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-modal class="glass-content" trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+        <ion-list>
+          <ion-item-group>
+            <ion-item-divider>
+              <ion-label>Information </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <ion-label>Red </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>IP</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Bateria </ion-label>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label> Volume </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <div class="counter__section">
+                <ion-button (click)="decrement()">-</ion-button>
+                <p>{{count }}</p>
+                <ion-button slot="end" (click)="increment()">+</ion-button>
+              </div>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label>Language </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <ion-select label="Language" placeholder="Spanish">
+                <ion-select-option value="Spanish">Spanish</ion-select-option>
+                <ion-select-option value="English">English</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label>Reboot </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <div class="custom-button">
+                <ion-item value="reboot" id="reboot" expand="full" button detail="false">
+                  <ion-label>
+                    <h3>Reboot</h3>
+                  </ion-label>
+                  <ion-alert
+                    trigger="reboot"
+                    header="Do you want reboot?"
+                    [buttons]="alertButtons"
+                    ></ion-alert>
+                </ion-item>
+              </div>
+            </ion-item>
+            <ion-item-divider>
+              <ion-label>Power off </ion-label>
+            </ion-item-divider>
+            <ion-item>
+              <div class="custom-button" >
+                <ion-item value="poweroff" id="poweroff" button detail="false">
+                  <ion-label>
+                    <h3>Power off</h3>
+                  </ion-label>
+                  <ion-alert
+                    trigger="poweroff"
+                    header="Do you want power off?"
+                    [buttons]="alertButtons"
+                    ></ion-alert>
+                </ion-item>
+              </div>
+              
+            </ion-item>
+
+          </ion-item-group>
+        </ion-list>
+      </div>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>
+

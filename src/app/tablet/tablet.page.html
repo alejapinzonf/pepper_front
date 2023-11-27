@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Tablet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="6" size-lg="6">
+        <div class="custom-card-size">
+          <ion-card class="cardsb">
+            <ion-card-header>
+              <ion-card-title style="font-size: 30px;">Image Tablet</ion-card-title>
+              
+            </ion-card-header>
+            <ion-card-content style="font-size: 20px;">
+              Paste here the link of the image that you want to show in the tablet
+              <ion-input 
+                label="URL image                                                             "
+                labelPlacement="stacked"
+                [clearOnEdit]="true"
+                placeholder=" "
+              >
+              </ion-input>
+            </ion-card-content>
+            <ion-button style="font-size: 15px" color="custom" fill="clear">Connect</ion-button>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-sm="6" size-md="6" size-lg="6">
+        <div class="custom-card-size">
+          <ion-card class="cardsb">
+            <ion-card-header>
+              <ion-card-title style="font-size: 30px;">Video Tablet</ion-card-title>
+              
+            </ion-card-header>
+            <ion-card-content style="font-size: 20px;">
+              Paste here the link of the video that you want to show in the tablet
+              <ion-input 
+                label="URL Video                                                             "
+                labelPlacement="stacked"
+                [clearOnEdit]="true"
+                placeholder=" "
+              >
+              </ion-input>
+            </ion-card-content>
+            <ion-button style="font-size: 15px" color="custom" fill="clear">Connect</ion-button>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="6" size-lg="6">
+        <div class="custom-card-size">
+          <ion-card class="cardsb">
+            <ion-card-header>
+              <ion-card-title style="font-size: 30px;">Show Page</ion-card-title>
+                
+            </ion-card-header>
+            <ion-card-content style="font-size: 20px;">
+              This option allows you to open the Google browser on Pepper's tablet.
+              <ion-input 
+                label="URL                                                             "
+                labelPlacement="stacked"
+                [clearOnEdit]="true"
+                placeholder=" "
+              >
+              </ion-input>
+            </ion-card-content>
+            <ion-button style="font-size: 15px" color="custom" fill="clear">Connect</ion-button>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col size="12" size-sm="6" size-md="6" size-lg="6">
+        <div class="custom-card-size">
+          <ion-card class="cardsb">
+            <ion-card-header>
+              <ion-card-title style="font-size: 30px;">Google</ion-card-title>
+              
+            </ion-card-header>
+            <ion-card-content style="font-size: 20px;">
+              This option allows you to open the Google browser on Pepper's tablet.
+            </ion-card-content>
+            <ion-button style="font-size: 15px" color="custom" fill="clear">Connect</ion-button>
+          </ion-card>
+        </div>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

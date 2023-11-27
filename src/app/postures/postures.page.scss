@@ -1,0 +1,14 @@
+.customa {
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ion-content {
+    --ion-background-color: var(--ion-color-blue-pepper);
+}
+ion-content.ion-color-dark {
+    --ion-background-color: var(--ion-color-dark);
+}

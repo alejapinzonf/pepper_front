@@ -1,0 +1,47 @@
+img{
+    padding-top: 5vh;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+ion-content {
+  --ion-background-color: var(--ion-color-blue-pepper);
+}
+ion-content.ion-color-dark {
+  --ion-background-color: var(--ion-color-dark);
+}
+ion-button {
+  &.ion-color-custom {
+    --ion-color-base: var(--ion-color-but);
+  }
+}
+ion-button.ion-color-dark {
+  &.ion-color-custom {
+    --ion-color-base: var(--ion-color-but);
+  }
+}
+.barra {
+  --ion-background-color: var(--ion-color-barra);
+  --ion-color-contrast: #ffffff; 
+}
+ion-toolbar.ion-color-dark.barra {
+  --ion-background-color: var(--ion-color-barra);
+  --ion-color-contrast: #ffffff;
+}
+.cardsa {
+  --ion-background-color: var(--ion-color-frente);
+  --ion-color-contrast: #ffffff;
+}
+ion-card.ion-color-dark.cards {
+  --ion-background-color: var(--ion-color-frente);
+  --ion-color-contrast: #ffffff;
+}
+.cardsb {
+  --ion-background-color: var(--ion-color-fondo);
+  --ion-color-contrast: #ffffff;
+}
+.ion-color-dark.cardsb {
+  --ion-background-color: var(--ion-color-fondo);
+  --ion-color-contrast: #ffffff;
+}
+

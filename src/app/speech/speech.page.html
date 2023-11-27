@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Speech</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-text-center">
+    <img src="assets/pepper/pepper.png">  
+  </div>
+  <div class="custom">
+    <ion-item>
+      <ion-input
+        label="Pepper said"
+        labelPlacement="stacked"
+        [clearOnEdit]="true"
+        placeholder="Enter text"
+      >
+      </ion-input>
+    </ion-item>
+  
+  </div>
+  
+</ion-content>

@@ -1,0 +1,19 @@
+.custom-card-size {
+    width: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    padding-top: 30vh;
+    width: 100%;
+    max-width: 500px;
+}
+ion-content {
+    --ion-background-color: url(/assets/pepper/pepper1.gif);
+}
+ion-header {
+    background: url(/assets/pepper/pepper1.gif);
+}
